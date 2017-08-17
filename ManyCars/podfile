@@ -1,0 +1,4 @@
+platform :ios, ‘9.0’
+target 'ManyCars' do
+pod 'SDWebImage', '~> 4.1.0'
+end
