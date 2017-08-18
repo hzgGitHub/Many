@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14E43A1903B8116CDAC83F37 /* libPods-ManyCars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAB21019F300125846AAE3A /* libPods-ManyCars.a */; };
+		E21D29301F4673150081236B /* ZGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D292F1F4673150081236B /* ZGScrollView.m */; };
 		E2A814E81F458A0A00C75B90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A814E71F458A0A00C75B90 /* main.m */; };
 		E2A814EB1F458A0A00C75B90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A814EA1F458A0A00C75B90 /* AppDelegate.m */; };
 		E2A814F11F458A0A00C75B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A814EF1F458A0A00C75B90 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		C889F500CBBE21AED9216CC3 /* Pods-ManyCars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManyCars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManyCars/Pods-ManyCars.debug.xcconfig"; sourceTree = "<group>"; };
 		CCAB21019F300125846AAE3A /* libPods-ManyCars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ManyCars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21D29001F459DC00081236B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E21D292E1F4673150081236B /* ZGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGScrollView.h; sourceTree = "<group>"; };
+		E21D292F1F4673150081236B /* ZGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGScrollView.m; sourceTree = "<group>"; };
 		E2A814E31F458A0A00C75B90 /* ManyCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManyCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A814E71F458A0A00C75B90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2A814E91F458A0A00C75B90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +77,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E21D29291F46729C0081236B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E21D292A1F4672B80081236B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E21D292B1F4672C10081236B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		E21D292C1F4672CF0081236B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E21D292D1F4672CF0081236B /* MainViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E21D292D1F4672CF0081236B /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				E21D292E1F4673150081236B /* ZGScrollView.h */,
+				E21D292F1F4673150081236B /* ZGScrollView.m */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
 		E2A814DA1F458A0A00C75B90 = {
 			isa = PBXGroup;
 			children = (
@@ -119,12 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				E2A814FE1F458C9300C75B90 /* BaseViewControllers */,
-				E2A814FF1F458C9300C75B90 /* Categories */,
 				E2A815001F458C9300C75B90 /* Controllers */,
-				E2A815041F458C9300C75B90 /* Models */,
-				E2A815051F458C9300C75B90 /* Others */,
+				E21D292C1F4672CF0081236B /* Views */,
+				E21D292A1F4672B80081236B /* Models */,
+				E21D29291F46729C0081236B /* Categories */,
 				E2A815061F458C9300C75B90 /* Tools */,
-				E2A815071F458C9300C75B90 /* Views */,
+				E21D292B1F4672C10081236B /* Others */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -138,13 +179,6 @@
 				E2A815151F458DAE00C75B90 /* HZNavViewController.m */,
 			);
 			path = BaseViewControllers;
-			sourceTree = "<group>";
-		};
-		E2A814FF1F458C9300C75B90 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		E2A815001F458C9300C75B90 /* Controllers */ = {
@@ -184,33 +218,12 @@
 			path = NetSites;
 			sourceTree = "<group>";
 		};
-		E2A815041F458C9300C75B90 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E2A815051F458C9300C75B90 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
 		E2A815061F458C9300C75B90 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				E21D29001F459DC00081236B /* Header.h */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		E2A815071F458C9300C75B90 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +356,7 @@
 				E2A814EB1F458A0A00C75B90 /* AppDelegate.m in Sources */,
 				E2A815101F458D5300C75B90 /* NetSitesViewController.m in Sources */,
 				E2A8150A1F458CCF00C75B90 /* MainViewController.m in Sources */,
+				E21D29301F4673150081236B /* ZGScrollView.m in Sources */,
 				E2A814E81F458A0A00C75B90 /* main.m in Sources */,
 				E2A8150D1F458D3400C75B90 /* MineViewController.m in Sources */,
 				E2A815161F458DAE00C75B90 /* HZNavViewController.m in Sources */,
