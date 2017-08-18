@@ -52,12 +52,18 @@
     HZNavViewController *nav = [[HZNavViewController alloc]initWithRootViewController:childVC];
     [nav.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18.0]}];
     [nav.navigationBar setBarTintColor:bgColor];//注意设置barTintcolor才是导航栏颜色
+    //对导航左右itme赋值
+    childVC.navigationItem.leftBarButtonItem = [UIBarButtonItem leftItemWithImageName:@"定位" withTitle:@"杭州" target:self action:@selector(left)];
     
     [self addChildViewController:nav];
     
     
 
 
+}
+- (void)left {
+    HZLog(@"左按钮触发");
+ 
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		14E43A1903B8116CDAC83F37 /* libPods-ManyCars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAB21019F300125846AAE3A /* libPods-ManyCars.a */; };
 		E21D29301F4673150081236B /* ZGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D292F1F4673150081236B /* ZGScrollView.m */; };
+		E21D29331F46BC040081236B /* UIBarButtonItem+NavBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D29321F46BC040081236B /* UIBarButtonItem+NavBarButton.m */; };
+		E21D29361F46BC320081236B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D29351F46BC320081236B /* UIView+Extension.m */; };
+		E21D293D1F46D74D0081236B /* CustomNavBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D293C1F46D74D0081236B /* CustomNavBarButton.m */; };
 		E2A814E81F458A0A00C75B90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A814E71F458A0A00C75B90 /* main.m */; };
 		E2A814EB1F458A0A00C75B90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A814EA1F458A0A00C75B90 /* AppDelegate.m */; };
 		E2A814F11F458A0A00C75B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A814EF1F458A0A00C75B90 /* Main.storyboard */; };
@@ -28,6 +31,12 @@
 		E21D29001F459DC00081236B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E21D292E1F4673150081236B /* ZGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGScrollView.h; sourceTree = "<group>"; };
 		E21D292F1F4673150081236B /* ZGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGScrollView.m; sourceTree = "<group>"; };
+		E21D29311F46BC040081236B /* UIBarButtonItem+NavBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+NavBarButton.h"; sourceTree = "<group>"; };
+		E21D29321F46BC040081236B /* UIBarButtonItem+NavBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+NavBarButton.m"; sourceTree = "<group>"; };
+		E21D29341F46BC320081236B /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E21D29351F46BC320081236B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		E21D293B1F46D74D0081236B /* CustomNavBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavBarButton.h; sourceTree = "<group>"; };
+		E21D293C1F46D74D0081236B /* CustomNavBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavBarButton.m; sourceTree = "<group>"; };
 		E2A814E31F458A0A00C75B90 /* ManyCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManyCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A814E71F458A0A00C75B90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2A814E91F458A0A00C75B90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +89,10 @@
 		E21D29291F46729C0081236B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				E21D29341F46BC320081236B /* UIView+Extension.h */,
+				E21D29351F46BC320081236B /* UIView+Extension.m */,
+				E21D29311F46BC040081236B /* UIBarButtonItem+NavBarButton.h */,
+				E21D29321F46BC040081236B /* UIBarButtonItem+NavBarButton.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -101,6 +114,7 @@
 		E21D292C1F4672CF0081236B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E21D293A1F46D6C90081236B /* CustomViews */,
 				E21D292D1F4672CF0081236B /* MainViews */,
 			);
 			path = Views;
@@ -113,6 +127,15 @@
 				E21D292F1F4673150081236B /* ZGScrollView.m */,
 			);
 			path = MainViews;
+			sourceTree = "<group>";
+		};
+		E21D293A1F46D6C90081236B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E21D293B1F46D74D0081236B /* CustomNavBarButton.h */,
+				E21D293C1F46D74D0081236B /* CustomNavBarButton.m */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		E2A814DA1F458A0A00C75B90 = {
@@ -352,8 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21D293D1F46D74D0081236B /* CustomNavBarButton.m in Sources */,
+				E21D29361F46BC320081236B /* UIView+Extension.m in Sources */,
 				E2A815131F458D9100C75B90 /* HZTabBarViewController.m in Sources */,
 				E2A814EB1F458A0A00C75B90 /* AppDelegate.m in Sources */,
+				E21D29331F46BC040081236B /* UIBarButtonItem+NavBarButton.m in Sources */,
 				E2A815101F458D5300C75B90 /* NetSitesViewController.m in Sources */,
 				E2A8150A1F458CCF00C75B90 /* MainViewController.m in Sources */,
 				E21D29301F4673150081236B /* ZGScrollView.m in Sources */,
@@ -462,6 +488,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
